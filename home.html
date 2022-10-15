@@ -11,19 +11,23 @@
 
 <body>
     <section class="sectBox01">
-        <div class="inputBox">
-            <input type="text" required="required">
-            <span>Qual seu nome?</span>
-        </div>
+        <form action="">
+            <H1>Descubra seu <span>signo</span></H1>
 
-        <div class="inputBox01">
-            <input type="date" required="required">
-            <span>Quando você nasceu?</span>
-        </div>
+            <div class="inputBox01">
+                <input type="text" name="name" id="txtName" required="required">
+                <span for="name">Qual seu nome?</span>
+            </div>
 
-        <div class="inputBox02">
-            <input type="submit" value="Enviar">
-        </div>
+            <div class="inputBox02">
+                <input type="date" name="date" id="txtDate" required="required">
+                <span for="date">Quando você nasceu?</span>
+            </div>
+
+            <div class="inputBox03">
+                <input type="submit" name="submit" id="txtSubmit" value="Enviar">
+            </div>
+        </form>
     </section>
 </body>
 
