@@ -5,7 +5,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;    
 }
-body {
+body section {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,6 +15,10 @@ body {
     background-image: linear-gradient(30deg, #00dfc4, #1d2b3a, #1d2b3a);
 }
 .inputBox {
+    position: relative;
+    width: 260px;
+}
+.inputBox01 {
     position: relative;
     width: 260px;
 }
@@ -33,6 +37,18 @@ body {
     font-size: 1em;
     transition: 0.5s;
 }
+.inputBox01 input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(255,255,255,0.25);
+    background: #1d2b3a;
+    border-radius: 5px;
+    outline: none;
+    color: #fff;
+    font-size: 1em;
+    transition: 0.5s;
+    text-align: center;
+}
 .inputBox02 input {
     width: 100%;
     padding: 10px;
@@ -47,6 +63,8 @@ body {
 }
 .inputBox02 input:hover {
     background: #00dfc4;
+    color: #1d2b3a;
+    transition: 0.5s;
 }
 .inputBox span {
     position: absolute;
@@ -55,6 +73,16 @@ body {
     pointer-events: none;
     font-size: 1em;
     color: rgba(255,255,255,0.25);
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+.inputBox01 span {
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: rgba(255, 255, 255, 0);
     text-transform: uppercase;
     transition: 0.5s;
 }
@@ -79,6 +107,17 @@ body {
     border-right: 1px solid #00dfc4;
     letter-spacing: 0.2em;
 }
+.inputBox01 input:valid ~ span,
+.inputBox01 input:focus ~ span {
+    color: #00dfc4;
+    transform: translate(10px) translateY(-7px);
+    font-size: 0.65em;
+    padding: 0 10px;
+    background: #1d2b3a;
+    border-left: 1px solid #00dfc4;
+    border-right: 1px solid #00dfc4;
+    letter-spacing: 0.2em;
+}
 .inputBox02 input:valid ~ span,
 .inputBox02 input:focus ~ span {
     color: #00dfc4;
@@ -90,17 +129,11 @@ body {
     border-right: 1px solid #00dfc4;
     letter-spacing: 0.2em;
 }
-.inputBox:nth-child(2) input:valid ~ span,
-.inputBox:nth-child(2) input:focus ~ span {
-    background: #00dfc4;
-    color: #1d2b3a;
-    border-radius: 5px;
-}
 .inputBox input:valid,
 .inputBox input:focus {
     border: 1px solid #00dfc4;
 }
-.inputBox02 input:valid,
-.inputBox02 input:focus {
+.inputBox01 input:valid,
+.inputBox01 input:focus {
     border: 1px solid #00dfc4;
 }
