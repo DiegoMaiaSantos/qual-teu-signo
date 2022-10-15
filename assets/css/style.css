@@ -5,68 +5,88 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;    
 }
+body  {
+    background-image: url(/assets/img/telaFundoSignos_01.jpg);
+    transform: scale(0.8);
+    padding-left: 200px;
+}
 body section {
+    background-image: linear-gradient(30deg, #00dfc536, #1d2b3ac5, #1d2b3a69);
+    width: 80%;
+    border-radius: 20px;
+}
+body section form {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     flex-direction: column;
     gap: 30px;
-    background-image: linear-gradient(30deg, #00dfc4, #1d2b3a, #1d2b3a);
 }
-.inputBox {
-    position: relative;
-    width: 260px;
+body section h1 {
+    color: #fff;
+}
+body section h1 span {
+    background-image: url(/assets/img/telaFundoSignos_02.jpg);
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 50px;
+    padding-top: 150px;
 }
 .inputBox01 {
     position: relative;
-    width: 260px;
+    width: 270px;
 }
 .inputBox02 {
     position: relative;
-    width: 260px;
+    width: 270px;
 }
-.inputBox input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid rgba(255,255,255,0.25);
-    background: #1d2b3a;
-    border-radius: 5px;
-    outline: none;
-    color: #fff;
-    font-size: 1em;
-    transition: 0.5s;
+.inputBox03 {
+    position: relative;
+    width: 270px;
 }
 .inputBox01 input {
     width: 100%;
     padding: 10px;
     border: 1px solid rgba(255,255,255,0.25);
     background: #1d2b3a;
-    border-radius: 5px;
+    border-radius: 10px;
     outline: none;
     color: #fff;
-    font-size: 1em;
+    font-size: 18px;
     transition: 0.5s;
-    text-align: center;
 }
 .inputBox02 input {
     width: 100%;
     padding: 10px;
     border: 1px solid rgba(255,255,255,0.25);
     background: #1d2b3a;
-    border-radius: 5px;
+    border-radius: 10px;
     outline: none;
     color: #fff;
-    font-size: 1em;
+    font-size: 18px;
+    transition: 0.5s;
+    text-align: center;
+}
+.inputBox03 input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(255,255,255,0.25);
+    background: #1d2b3a;
+    border-radius: 10px;
+    outline: none;
+    color: #fff;
+    font-size: 18px;
     transition: 0.5s;
     cursor: pointer;
 }
-.inputBox02 input:hover {
+.inputBox03 input:hover {
     background: #00dfc4;
     color: #1d2b3a;
-    transition: 0.5s;
+    transition: 0.8s;
 }
-.inputBox span {
+.inputBox01 span {
     position: absolute;
     left: 0;
     padding: 10px;
@@ -76,7 +96,7 @@ body section {
     text-transform: uppercase;
     transition: 0.5s;
 }
-.inputBox01 span {
+.inputBox02 span {
     position: absolute;
     left: 0;
     padding: 10px;
@@ -86,7 +106,7 @@ body section {
     text-transform: uppercase;
     transition: 0.5s;
 }
-.inputBox02 span {
+.inputBox03 span {
     position: absolute;
     left: 0;
     padding: 10px;
@@ -95,17 +115,6 @@ body section {
     color: rgba(255,255,255,0.25);
     text-transform: uppercase;
     transition: 0.5s;
-}
-.inputBox input:valid ~ span,
-.inputBox input:focus ~ span {
-    color: #00dfc4;
-    transform: translate(10px) translateY(-7px);
-    font-size: 0.65em;
-    padding: 0 10px;
-    background: #1d2b3a;
-    border-left: 1px solid #00dfc4;
-    border-right: 1px solid #00dfc4;
-    letter-spacing: 0.2em;
 }
 .inputBox01 input:valid ~ span,
 .inputBox01 input:focus ~ span {
@@ -129,11 +138,11 @@ body section {
     border-right: 1px solid #00dfc4;
     letter-spacing: 0.2em;
 }
-.inputBox input:valid,
-.inputBox input:focus {
-    border: 1px solid #00dfc4;
-}
 .inputBox01 input:valid,
 .inputBox01 input:focus {
+    border: 1px solid #00dfc4;
+}
+.inputBox02 input:valid,
+.inputBox02 input:focus {
     border: 1px solid #00dfc4;
 }
