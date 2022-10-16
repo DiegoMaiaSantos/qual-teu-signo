@@ -7,25 +7,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Qual teu signo?</title>
     <link rel="stylesheet" href="/assets/css/style.css">
+    <script type="module" src="/assets/js/main.js" defer></script>
+
 </head>
 
 <body>
     <section class="sectBox01">
-        <form action="">
+        <form>
             <H1>Descubra seu <span>signo</span></H1>
-
             <div class="inputBox01">
-                <input type="text" name="name" id="txtName" required="required">
-                <span for="name">Qual seu nome?</span>
+                <input type="number" name="day" id="txtDateDay" required="required">
+                <span for="name">Qual dia nasceu?</span>
             </div>
-
             <div class="inputBox02">
-                <input type="date" name="date" id="txtDate" required="required">
-                <span for="date">Quando você nasceu?</span>
+                <input type="number" name="month" id="txtDateMonth" required="required">
+                <span for="date">Qual mês nasceu?</span>
             </div>
-
             <div class="inputBox03">
-                <input type="submit" name="submit" id="txtSubmit" value="Enviar">
+                <button type="button" id="txtSubmit" onclick="click()">Enviar</button>
             </div>
         </form>
     </section>
